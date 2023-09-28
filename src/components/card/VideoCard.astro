@@ -1,0 +1,16 @@
+---
+const { href, img, title, body } = Astro.props;
+---
+
+<div class="bg-[#F2F3F4] shadow-lg w-[574px] rounded-[16px] lg:mt-0">
+  <a class="flex flex-col md:flex-col gap-2 pr-1" href={href}>
+    <div class="shrink-0 px-3 pt-3 lg:pt-[30px] lg:px-[45px] lg:pb-22">
+      <img class="w-full" src={img} />
+    </div>
+    <div class="lg:pt-5 px-3 pb-3 lg:px-[45px] lg:pb-[74px]">
+      <p class="pt-2 text-black text-base leading-6 font-normal md:leading-8">
+        {body}
+      </p>
+    </div>
+  </a>
+</div>

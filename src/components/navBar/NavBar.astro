@@ -1,0 +1,155 @@
+<nav
+  class="px-5 lg:px-[106px] bg-white lg:shadow md:flex lg:flex lg:items-center lg:justify-between"
+>
+  <div class="flex items-center justify-between">
+    <div class="text-3xl text-white corsur-pointer block md:hidden lg:hidden">
+      <img
+        id="img-change"
+        class="w-10"
+        onclick="Menu(this)"
+        src="assets/images/png/menu_icon.png"
+        alt=""
+      />
+    </div>
+    <div class="shrink-0 w-[100px] lg:w-full py-2">
+      <a href="/">
+        <img src="/assets/images/png/nura_logo.png" alt="" />
+      </a>
+    </div>
+    <div class="flex justify-center items-center md:hidden lg:hidden">
+      <div>
+        <img src="/assets/images/png/notification_icon.png" alt="">
+      </div>
+      <div class="shrink-0 pl-2">
+        <img class=" border-solid border-2 border-yellow-500 rounded-full" src="/assets/images/png/profile_img.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <ul
+    class="hidden md:flex lg:flex md:items-center md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7"
+  >
+    <li class="m-4">
+      <a
+        href="/"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Screening
+      </a>
+    </li>
+    <l class="m-4">
+      <a
+        href="#"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Your Health
+      </a>
+    </l>
+    <li class="m-4">
+      <a
+        href="/"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Our Technology
+      </a>
+    </li>
+    <li class="m-4">
+      <a
+        href="/"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Packages
+      </a>
+    </li>
+    <li class="m-4">
+      <a
+        href="#"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Corporates
+      </a>
+    </li>
+    <li class="m-4">
+      <a
+        href="#"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Blog
+      </a>
+    </li>
+    <div
+      class="rounded-full bg-[#f2f3f4] flex items-center justify-center md:px-2 lg:px-2 gap-2"
+    >
+      <div class="shrink-0 md:max-w-sm lg:max-w-xl  md:py-1">
+        <img src="/assets/images/png/profile_img.png" alt="" />
+      </div>
+      <p class="text-xs lg:text-base font-normal text-blacklg:py-2">Abhishek</p>
+    </div>
+  </ul>
+  <ul
+    class="hidden md:hidden md:items-center z-10 md:z-auto absolute bg-white w-full left-0 md:w-full md:py-0 py-4 md:pl-0 pl-7transition-all ease-in duration-500 drop-shadow-lg"
+    id="show-menu"
+  >
+    <li class="m-4">
+      <a
+        href="/"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Screening
+      </a>
+    </li>
+    <l class="m-4">
+      <a
+        href="#"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Your Health
+      </a>
+    </l>
+    <li class="m-4">
+      <a
+        href="/"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Our Technology
+      </a>
+    </li>
+    <li class="m-4">
+      <a
+        href="/"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Packages
+      </a>
+    </li>
+    <li class="m-4">
+      <a
+        href="#"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Corporates
+      </a>
+    </li>
+    <li class="m-4">
+      <a
+        href="#"
+        class="text-base font-normal text-black hover:text-cyan-500 duration-500"
+      >
+        Blog
+      </a>
+    </li>
+    <li class="m-4"></li>
+  </ul>
+</nav>
+<script is:inline>
+  Menu = () => {
+    const show = document.getElementById("show-menu");
+    const img = document.getElementById("img-change");
+    if (show.classList.contains("hidden", "md:hidden")) {
+      show.classList.remove("hidden", "md:hidden");
+      img.src = "assets/images/png/menu_icon.png";
+    } else {
+      show.classList.add("hidden", "md:hidden");
+      img.src = "/assets/images/png/menu_icon.png";
+    }
+  };
+</script>
